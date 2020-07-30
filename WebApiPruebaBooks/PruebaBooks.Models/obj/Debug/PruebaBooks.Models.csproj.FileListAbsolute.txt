@@ -1,0 +1,9 @@
+C:\Users\tulio\Documents\GitHub\prueba-tecnica-claro\WebApiPruebaBooks\PruebaBooks.Models\bin\Debug\PruebaBooks.Models.dll
+C:\Users\tulio\Documents\GitHub\prueba-tecnica-claro\WebApiPruebaBooks\PruebaBooks.Models\bin\Debug\PruebaBooks.Models.pdb
+C:\Users\tulio\Documents\GitHub\prueba-tecnica-claro\WebApiPruebaBooks\PruebaBooks.Models\obj\Debug\PruebaBooks.Models.csprojAssemblyReference.cache
+C:\Users\tulio\Documents\GitHub\prueba-tecnica-claro\WebApiPruebaBooks\PruebaBooks.Models\obj\Debug\PruebaBooks.Models.csproj.CoreCompileInputs.cache
+C:\Users\tulio\Documents\GitHub\prueba-tecnica-claro\WebApiPruebaBooks\PruebaBooks.Models\obj\Debug\PruebaBooks.Models.dll
+C:\Users\tulio\Documents\GitHub\prueba-tecnica-claro\WebApiPruebaBooks\PruebaBooks.Models\obj\Debug\PruebaBooks.Models.pdb
+C:\Users\tulio\Documents\GitHub\prueba-tecnica-claro\WebApiPruebaBooks\PruebaBooks.Models\bin\Debug\Newtonsoft.Json.dll
+C:\Users\tulio\Documents\GitHub\prueba-tecnica-claro\WebApiPruebaBooks\PruebaBooks.Models\bin\Debug\Newtonsoft.Json.xml
+C:\Users\tulio\Documents\GitHub\prueba-tecnica-claro\WebApiPruebaBooks\PruebaBooks.Models\obj\Debug\PruebaBooks.Models.csproj.CopyComplete
