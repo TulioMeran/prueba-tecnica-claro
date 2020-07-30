@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Book>
+
+@{
+    ViewBag.Title = "Home";
+}
+
+<div class="card-deck">
+   
+    <div class="row scroll-h">
+        @foreach (var book in Model)
+        {
+            <div class="col-md-12">
+                <div class="card m-3">
+                    <div class="card-header">
+                        <h3>@book.Title</h3>
+                        <p>@book.Description</p>
+                    </div>
+
+                    <div class="card-footer text-center">
+                        <a asp-controller="book" asp-action="detail" asp-route-id="@book.ID"
+                           class="btn btn-primary">Show</a>
+                        <a class="btn btn-primary" asp-action="edit" asp-controller="book" asp-route-id="@book.ID">Edit</a>
+                        <a class="btn btn-danger" asp-action="delete" asp-controller="book" asp-route-id="@book.ID">Delete</a>
+                    </div>
+                </div>
+            </div>
+
+
+        }
+    </div>
+
+</div>

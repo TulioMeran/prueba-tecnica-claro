@@ -104,7 +104,6 @@ namespace PruebaBooks.Models.ApiService
             }
         }
 
-
         //Subir datos
         public async Task<Response> PostData(string urlBase, string servicePrefix, string controller, object datos)
         {
@@ -173,6 +172,52 @@ namespace PruebaBooks.Models.ApiService
                 string requestUri = string.Format("{0}{1}", servicePrefix, controller);
 
                 var response = await httpclient.PostAsync(requestUri, content);
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    return new Response
+                    {
+                        IsSuccess = false,
+                        Message = "Problema"
+                    };
+                }
+
+
+                return new Response
+                {
+                    IsSuccess = true,
+                    Message = "Ok"
+                };
+
+
+            }
+            catch (Exception ex)
+            {
+
+                return new Response
+                {
+                    IsSuccess = false,
+                    Message = ex.Message
+                };
+
+            }
+        }
+
+        //Actualizar datos
+        public async Task<Response> PutData(string urlBase, string servicePrefix, string controller, object datos)
+        {
+            try
+            {
+
+                var content = new StringContent(JsonConvert.SerializeObject(datos), Encoding.UTF8, "application/json");
+
+                HttpClient httpclient = new HttpClient();
+
+                httpclient.BaseAddress = new Uri(urlBase);
+
+                string requestUri = string.Format("{0}{1}", servicePrefix, controller);
+
+                var response = await httpclient.PutAsync(requestUri, content);
 
                 if (!response.IsSuccessStatusCode)
                 {

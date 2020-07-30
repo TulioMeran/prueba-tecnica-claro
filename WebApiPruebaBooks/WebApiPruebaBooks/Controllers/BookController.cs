@@ -21,13 +21,6 @@ namespace WebApiPruebaBooks.Controllers
             _bookManager = bookManager;
         }
 
-        [HttpGet]
-        [Route("prueba")]
-        public string prueba()
-        {
-            return "HOLA";
-        }
-
         // GET: /<controller>/
         [HttpGet]
         [Route("getbooks")]
@@ -35,7 +28,7 @@ namespace WebApiPruebaBooks.Controllers
         {
            var lista = await _bookManager.GetBooks();
 
-            return Json(new { lista });
+            return Json(lista);
         }
 
         [HttpGet]
@@ -44,7 +37,7 @@ namespace WebApiPruebaBooks.Controllers
         {
             var book = await _bookManager.GetBook(id);
 
-            return Json(new { book });
+            return Json(book);
         }
 
         [HttpPost]
@@ -53,7 +46,7 @@ namespace WebApiPruebaBooks.Controllers
         {
             var respuesta = await _bookManager.AddBook(book);
 
-            return Json(new { respuesta });
+            return Json(respuesta);
         }
 
         [HttpPut]
@@ -62,7 +55,7 @@ namespace WebApiPruebaBooks.Controllers
         {
             var respuesta = await _bookManager.UpdateBook(book);
 
-            return Json(new { respuesta });
+            return Json(respuesta);
         }
 
         [HttpDelete]
@@ -71,7 +64,7 @@ namespace WebApiPruebaBooks.Controllers
         {
             var respuesta = await _bookManager.DeleteBook(id);
 
-            return Json(new { respuesta });
+            return Json(respuesta);
         }
 
 

@@ -1,0 +1,13 @@
+﻿.btn {
+    width: 75px;
+}
+
+.imageThumbnail {
+    height: 200px !important;
+    width: auto !important;
+}
+
+.scroll-h{
+    height: 400px !important;
+    overflow-y:auto !important;
+}
